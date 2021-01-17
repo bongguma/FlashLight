@@ -25,6 +25,7 @@
 		0F5DA0B725B45A9600024E7B /* onBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F5DA0AC25B45A9600024E7B /* onBG@2x.png */; };
 		0F5DA0BB25B45D6C00024E7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5DA0BA25B45D6C00024E7B /* Assets.xcassets */; };
 		0F5DA0BF25B4684100024E7B /* switch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0F5DA0BE25B4684100024E7B /* switch.wav */; };
+		0F5DA0C325B4724700024E7B /* AVCaptureDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5DA0C225B4724700024E7B /* AVCaptureDevice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		0F5DA0AC25B45A9600024E7B /* onBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "onBG@2x.png"; sourceTree = "<group>"; };
 		0F5DA0BA25B45D6C00024E7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F5DA0BE25B4684100024E7B /* switch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = switch.wav; sourceTree = "<group>"; };
+		0F5DA0C225B4724700024E7B /* AVCaptureDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		0F5DA08B25B45A2000024E7B /* FlashLight */ = {
 			isa = PBXGroup;
 			children = (
+				0F5DA0C125B4721800024E7B /* extension */,
 				0F5DA0BD25B4681900024E7B /* sound */,
 				0F5DA0A125B45A4A00024E7B /* image */,
 				0F5DA08C25B45A2000024E7B /* AppDelegate.swift */,
@@ -117,6 +120,14 @@
 				0F5DA0BE25B4684100024E7B /* switch.wav */,
 			);
 			path = sound;
+			sourceTree = "<group>";
+		};
+		0F5DA0C125B4721800024E7B /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				0F5DA0C225B4724700024E7B /* AVCaptureDevice.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 				0F5DA09125B45A2000024E7B /* ViewController.swift in Sources */,
 				0F5DA08D25B45A2000024E7B /* AppDelegate.swift in Sources */,
 				0F5DA08F25B45A2000024E7B /* SceneDelegate.swift in Sources */,
+				0F5DA0C325B4724700024E7B /* AVCaptureDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBTLURJ7J7;
 				INFOPLIST_FILE = FlashLight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -369,6 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBTLURJ7J7;
 				INFOPLIST_FILE = FlashLight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

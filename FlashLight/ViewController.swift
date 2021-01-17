@@ -17,8 +17,13 @@ class ViewController: UIViewController {
     // 스위치 액션에 따른 소리 출력
     var switchSound:AVAudioPlayer?
     
+    // 스위치 사용여부
     var isOn = false
     
+    // 아이폰 플래쉬 제어
+    var flash:AVCaptureDevice?
+    
+    // 사운드 실행 경로
     let path = Bundle.main.path(forResource: "switch.wav", ofType: nil)!
     
     override func viewDidLoad() {
@@ -27,6 +32,8 @@ class ViewController: UIViewController {
         
         // 미리 사운드 메모리를 로드
         prepareToSwitchSound()
+        
+        flash = AVCaptureDevice.default(for: .video)!
     }
     
     // switch를 키거나 끌 때 사용하는 소리 함수
@@ -52,6 +59,8 @@ class ViewController: UIViewController {
         // 버튼이 on 일 때에는 true를 off일 때에는 false로 값 변경
         isOn = !isOn
         
+        // 아이폰 내 직접 플래쉬 제어
+        flash!.toggleTorch(flash!, isOn)
         switchBtn.setImage(isOn ? UIImage(named: "onSwitch.png"): UIImage(named: "offSwitch.png"), for: .normal)
         flashLightIv.image = isOn ? UIImage(named: "onBG.png") : UIImage(named: "offBG.png")
         
