@@ -16,16 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bv3-Om-ami">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="offBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bv3-Om-ami">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3t-bc-Ua9">
+                                <rect key="frame" x="192" y="463" width="30" height="70"/>
+                                <state key="normal" image="offSwitch.png"/>
+                                <connections>
+                                    <action selector="ClickSwitchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EHa-Ie-ck3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V3t-bc-Ua9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="BNf-23-YJt"/>
+                            <constraint firstItem="V3t-bc-Ua9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HY6-dV-Pu6"/>
+                        </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="flashLightIv" destination="Bv3-Om-ami" id="hY4-aE-Iqw"/>
+                        <outlet property="switchBtn" destination="V3t-bc-Ua9" id="olO-gL-NBr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -33,6 +48,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="offBG.png" width="375" height="667"/>
+        <image name="offSwitch.png" width="30" height="70"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
