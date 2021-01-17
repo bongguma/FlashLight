@@ -11,7 +11,6 @@
 		0F5DA08F25B45A2000024E7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5DA08E25B45A2000024E7B /* SceneDelegate.swift */; };
 		0F5DA09125B45A2000024E7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5DA09025B45A2000024E7B /* ViewController.swift */; };
 		0F5DA09425B45A2000024E7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5DA09225B45A2000024E7B /* Main.storyboard */; };
-		0F5DA09625B45A2300024E7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5DA09525B45A2300024E7B /* Assets.xcassets */; };
 		0F5DA09925B45A2300024E7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5DA09725B45A2300024E7B /* LaunchScreen.storyboard */; };
 		0F5DA0AD25B45A9600024E7B /* onSwitch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F5DA0A225B45A9600024E7B /* onSwitch@2x.png */; };
 		0F5DA0AE25B45A9600024E7B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F5DA0A325B45A9600024E7B /* icon.png */; };
@@ -24,6 +23,8 @@
 		0F5DA0B525B45A9600024E7B /* HappySmile_CI.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F5DA0AA25B45A9600024E7B /* HappySmile_CI.png */; };
 		0F5DA0B625B45A9600024E7B /* offSwitch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F5DA0AB25B45A9600024E7B /* offSwitch@2x.png */; };
 		0F5DA0B725B45A9600024E7B /* onBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F5DA0AC25B45A9600024E7B /* onBG@2x.png */; };
+		0F5DA0BB25B45D6C00024E7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5DA0BA25B45D6C00024E7B /* Assets.xcassets */; };
+		0F5DA0BF25B4684100024E7B /* switch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0F5DA0BE25B4684100024E7B /* switch.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +33,6 @@
 		0F5DA08E25B45A2000024E7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0F5DA09025B45A2000024E7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0F5DA09325B45A2000024E7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0F5DA09525B45A2300024E7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F5DA09825B45A2300024E7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F5DA09A25B45A2300024E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F5DA0A225B45A9600024E7B /* onSwitch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "onSwitch@2x.png"; sourceTree = "<group>"; };
@@ -46,6 +46,8 @@
 		0F5DA0AA25B45A9600024E7B /* HappySmile_CI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HappySmile_CI.png; sourceTree = "<group>"; };
 		0F5DA0AB25B45A9600024E7B /* offSwitch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offSwitch@2x.png"; sourceTree = "<group>"; };
 		0F5DA0AC25B45A9600024E7B /* onBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "onBG@2x.png"; sourceTree = "<group>"; };
+		0F5DA0BA25B45D6C00024E7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F5DA0BE25B4684100024E7B /* switch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = switch.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +80,14 @@
 		0F5DA08B25B45A2000024E7B /* FlashLight */ = {
 			isa = PBXGroup;
 			children = (
+				0F5DA0BD25B4681900024E7B /* sound */,
 				0F5DA0A125B45A4A00024E7B /* image */,
 				0F5DA08C25B45A2000024E7B /* AppDelegate.swift */,
 				0F5DA08E25B45A2000024E7B /* SceneDelegate.swift */,
 				0F5DA09025B45A2000024E7B /* ViewController.swift */,
 				0F5DA09225B45A2000024E7B /* Main.storyboard */,
-				0F5DA09525B45A2300024E7B /* Assets.xcassets */,
 				0F5DA09725B45A2300024E7B /* LaunchScreen.storyboard */,
+				0F5DA0BA25B45D6C00024E7B /* Assets.xcassets */,
 				0F5DA09A25B45A2300024E7B /* Info.plist */,
 			);
 			path = FlashLight;
@@ -106,6 +109,14 @@
 				0F5DA0A425B45A9600024E7B /* Thumbs.db */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		0F5DA0BD25B4681900024E7B /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				0F5DA0BE25B4684100024E7B /* switch.wav */,
+			);
+			path = sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,13 +180,14 @@
 				0F5DA0B025B45A9600024E7B /* offSwitch@3x.png in Resources */,
 				0F5DA0B425B45A9600024E7B /* offBG@2x.png in Resources */,
 				0F5DA0AF25B45A9600024E7B /* Thumbs.db in Resources */,
+				0F5DA0BB25B45D6C00024E7B /* Assets.xcassets in Resources */,
 				0F5DA0B525B45A9600024E7B /* HappySmile_CI.png in Resources */,
 				0F5DA09925B45A2300024E7B /* LaunchScreen.storyboard in Resources */,
 				0F5DA0B325B45A9600024E7B /* onBG@3x.png in Resources */,
 				0F5DA0AE25B45A9600024E7B /* icon.png in Resources */,
 				0F5DA0B125B45A9600024E7B /* onSwitch@3x.png in Resources */,
+				0F5DA0BF25B4684100024E7B /* switch.wav in Resources */,
 				0F5DA0B625B45A9600024E7B /* offSwitch@2x.png in Resources */,
-				0F5DA09625B45A2300024E7B /* Assets.xcassets in Resources */,
 				0F5DA09425B45A2000024E7B /* Main.storyboard in Resources */,
 				0F5DA0B225B45A9600024E7B /* offBG@3x.png in Resources */,
 				0F5DA0AD25B45A9600024E7B /* onSwitch@2x.png in Resources */,
