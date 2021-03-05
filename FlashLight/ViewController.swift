@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     // 스위치 사용여부
     var isOn = false
     
-    // 아이폰 플래쉬 제어
+    // 아이폰 플래쉬 제어 - 시뮬레이터로 실행이 불가
     var flash:AVCaptureDevice?
     
     // 사운드 실행 경로
